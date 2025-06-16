@@ -10,8 +10,14 @@
 	- step 7: goto repo -> create /.github/sonar-scan-action.yaml file and paste below code.
 	- step 8: goto actions and see if build successfully.
 	- step 9: refresh sonarqube url and check this fixes
+
+ 
 ## sonar-scanner.properties
+
 sonar.projectKey=my-first-github-to-sonarqube_devops_sonar_9677192197  
 sonar.projectName=My Project  
 sonar.sources=.  
+
+
+## devops-sonar/.github/sonar-scan-action.yaml
 
