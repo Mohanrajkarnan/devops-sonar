@@ -1,4 +1,6 @@
-# My Markdown File
+# Sonar Qube implementation and steps
+
+## Steps
 	- steps 1: let the sonar qube up and running
 	- step 2 : goto sonarqube cloud -> my account -> security ->create global analysis token ( copy)
 	- step 3: goto github repo -> settings -> secrets and variables -> 
@@ -8,3 +10,8 @@
 	- step 7: goto repo -> create /.github/sonar-scan-action.yaml file and paste below code.
 	- step 8: goto actions and see if build successfully.
 	- step 9: refresh sonarqube url and check this fixes
+## sonar-scanner.properties
+sonar.projectKey=my-first-github-to-sonarqube_devops_sonar_9677192197
+sonar.projectName=My Project
+sonar.sources=.
+
