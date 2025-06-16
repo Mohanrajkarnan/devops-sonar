@@ -21,3 +21,4 @@ sonar.sources=.
 
 ## devops-sonar/.github/sonar-scan-action.yaml
 
+<pre> ```yaml on: push: branches: - main # or your default branch pull_request: branches: - main jobs: sonarqube: name: SonarQube Scan runs-on: ubuntu-latest steps: - name: Checkout code uses: actions/checkout@v4 - name: Print current directory (debug) run: | pwd ls -la echo "Printing sonar-project.properties if exists:" cat sonar-project.properties || echo "No properties file found" - name: SonarQube Scan uses: SonarSource/sonarqube-scan-action@v4 env: SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }} SONAR_HOST_URL: https://80ea-2406-7400-1c3-5eb5-bd1c-ad7a-c634-4b51.ngrok-free.app SONAR_SCANNER_OPTS: > -Dsonar.projectKey=my-first-github-to-sonarqube_devops_sonar_9677192197 -Dsonar.projectName=My_Project -Dsonar.sources=. ``` </pre>
